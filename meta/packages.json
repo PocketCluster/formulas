@@ -1,5 +1,6 @@
 [
     {
+        "pkg-ver":"1.0.0",
         "name": "apache-hadoop",
         "family": [
             "hadoop"
