@@ -16,10 +16,11 @@
                         "ports": [],
                         "dep-lib": [],
                         "dep-bigpkg": [],
-                        "masters-path": [
+                        "path-masters": [
                             "hadoop/2-4-0/namenode/cluster"
                         ],
-                        "nodes-path": [
+                        "path-secondaries": [],
+                        "path-nodes": [
                             "hadoop/2-4-0/datanode/cluster"
                         ]
                     }
