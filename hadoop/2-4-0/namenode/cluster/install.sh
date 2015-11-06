@@ -12,3 +12,12 @@ mkdir -p /pocket/hdfs/2.4.0/cluster/yarn/nm-log-dir/userlogs
 
 # log file path
 mkdir -p /pocket/log/hadoop/2.4.0/cluster
+
+# save package to archive
+if [[ ! -n "/bigpkg/archive/hadoop-2.4.0.tar.gz" ]] ; then
+	curl -o "/bigpkg/archive/hadoop-2.4.0.tar.gz" "https://archive.apache.org/dist/hadoop/core/hadoop-2.4.0/hadoop-2.4.0.tar.gz" 
+fi
+
+if [[ ! -n "/bigpkg/hadoop-2.4.0/bin/hdfs" ]] ; then
+	tar -xvzf "/bigpkg/archive/hadoop-2.4.0.tar.gz" -C "/bigpkg/"
+fi
