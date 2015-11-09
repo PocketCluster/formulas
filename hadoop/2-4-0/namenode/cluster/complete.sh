@@ -4,7 +4,11 @@
 
 for ((i=1;i<=${NUM_NODES};i++));
 do
-	echo "pc-node${i}"$'\n' >> "${HADOOP_CONF_DIR}"/slaves
+	if [[ $i == 1 ]]; then
+		echo "pc-node${i}" > "${HADOOP_CONF_DIR}"/slaves
+	else
+		echo "pc-node${i}" >> "${HADOOP_CONF_DIR}"/slaves
+	fi
 done
 
 $HADOOP_HOME/bin/hadoop namenode -format
