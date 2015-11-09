@@ -2,7 +2,11 @@
 
 . /pocket/conf/hadoop/2.4.0/cluster/conf.bashrc
 
-echo "Formating namenode"
+for ((i=1;i<=${NUM_NODES};i++));
+do
+	echo "pc-node${i}"$'\n' >> "${HADOOP_CONF_DIR}"/slaves
+done
+
 $HADOOP_HOME/bin/hadoop namenode -format
 $HADOOP_HOME/sbin/start-dfs.sh
 

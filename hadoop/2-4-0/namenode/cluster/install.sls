@@ -110,15 +110,6 @@ mapred-site.xml:
     - mode: 644
     - template: jinja
 
-slaves:
-  file:
-    - managed
-    - name: /pocket/conf/hadoop/2.4.0/cluster/slaves
-    - source: salt://hadoop/2-4-0/namenode/cluster/slaves
-    - group: staff
-    - mode: 644
-    - template: jinja
-
 slaves.sh:
   file:
     - managed
