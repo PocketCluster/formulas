@@ -16,7 +16,7 @@ mkdir -p /pocket/log/hadoop/2.4.0/cluster/
 touch /pocket/readme.txt
 
 # download package
-if [[ ! -d "/bigpkg/hadoop-1.4.0/" ]] ; then
+if [[ ! -d "/bigpkg/hadoop-2.4.0" ]] ; then
 	#curl -L "http://pc-master:10120/hadoop-2.4.0.tar.gz" | tar xvz -C /bigpkg 2>&1
 	wget -qO- "http://pc-master:10120/hadoop-2.4.0.tar.gz" | tar xvz -C /bigpkg 2>&1
 	chown -R pocket:pocket "/bigpkg/hadoop-2.4.0"

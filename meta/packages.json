@@ -17,13 +17,21 @@
                         "ports": [],
                         "dep-lib": [],
                         "dep-bigpkg": [],
-                        "path-masters": [
-                            "hadoop/2-4-0/namenode/cluster"
+                        "path-install-master": [
+                            "hadoop/2-4-0/namenode/cluster/install"
                         ],
-                        "path-secondaries": [],
-                        "path-nodes": [
-                            "hadoop/2-4-0/datanode/cluster"
+                        "path-install-secondary": [],
+                        "path-install-nodes": [
+                            "hadoop/2-4-0/datanode/cluster/install"
+                        ],
+                        "path-complete-master":[
+                            "hadoop/2-4-0/namenode/cluster/complete"
+                        ],
+                        "path-complete-secondary":[
+                        ],
+                        "path-complete-nodes":[
                         ]
+
                     }
                 ]
             }
