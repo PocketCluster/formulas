@@ -1,6 +1,6 @@
 [
     {
-        "pkg-ver":"1.0.0",
+        "pkg-ver": "1.0.0",
         "name": "apache-hadoop",
         "family": [
             "hadoop"
@@ -17,6 +17,13 @@
                         "ports": [],
                         "dep-lib": [],
                         "dep-bigpkg": [],
+                        "path-download-master": [
+                            "hadoop/2-4-0/namenode/cluster"
+                        ],
+                        "path-download-secondary": [],
+                        "path-download-nodes": [
+                            "hadoop/2-4-0/datanode/cluster"
+                        ],
                         "path-install-master": [
                             "hadoop/2-4-0/namenode/cluster/install"
                         ],
@@ -24,14 +31,11 @@
                         "path-install-nodes": [
                             "hadoop/2-4-0/datanode/cluster/install"
                         ],
-                        "path-complete-master":[
+                        "path-complete-master": [
                             "hadoop/2-4-0/namenode/cluster/complete"
                         ],
-                        "path-complete-secondary":[
-                        ],
-                        "path-complete-nodes":[
-                        ]
-
+                        "path-complete-secondary": [],
+                        "path-complete-nodes": []
                     }
                 ]
             }
