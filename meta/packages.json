@@ -35,7 +35,16 @@
                             "hadoop/2-4-0/namenode/cluster/complete"
                         ],
                         "path-complete-secondary": [],
-                        "path-complete-nodes": []
+                        "path-complete-nodes": [],
+                        "script-start": [
+                            "/bigpkg/hadoop-2.4.0/bin/hadoop-start.sh"
+                        ],
+                        "script-stop": [
+                            "/bigpkg/hadoop-2.4.0/bin/hadoop-stop.sh"
+                        ],
+                        "script-cmd": [
+                            "source /pocket/conf/hadoop/2.4.0/cluster/conf.bashrc"
+                        ]
                     }
                 ]
             }
