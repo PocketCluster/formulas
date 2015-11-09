@@ -74,6 +74,24 @@ hdfs-site.xml:
     - mode: 644
     - template: jinja
 
+hadoop-start.sh:
+  file:
+    - managed
+    - name: /bigpkg/hadoop-2.4.0/bin/hadoop-start.sh
+    - source: salt://hadoop/2-4-0/namenode/cluster/hadoop-start.sh
+    - group: staff
+    - mode: 644
+    - template: jinja
+
+hadoop-stop.sh:
+  file:
+    - managed
+    - name: /bigpkg/hadoop-2.4.0/bin/hadoop-stop.sh
+    - source: salt://hadoop/2-4-0/namenode/cluster/hadoop-stop.sh
+    - group: staff
+    - mode: 644
+    - template: jinja
+
 httpfs-log4j.properties:
   file:
     - managed
