@@ -44,7 +44,15 @@
                         ],
                         "script-cmd": [
                             "source /pocket/conf/hadoop/2.4.0/cluster/conf.bashrc"
-                        ]
+                        ],
+                        "check-process": [
+                            "SecondaryNameNode",
+                            "ResourceManager",
+                            "NameNode",
+                            "JobHistoryServer"
+                        ],
+                        "cmd-reset": [],
+                        "cmd-uninstall": []
                     }
                 ]
             }
