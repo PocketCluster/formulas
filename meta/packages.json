@@ -13,7 +13,7 @@
                 "modes": [
                     {
                         "pkg-id": "78b11b92-8714-11e5-af63-feff819cdc9f",
-                        "type": "cluster",
+                        "mode": "cluster",
                         "description": "Multi-nodes Yarn cluster",
                         "ports": [],
                         "dep-lib": [],
