@@ -12,7 +12,7 @@
                 "description": "Version 2.4.0",
                 "modes": [
                     {
-                        "pkg-id":"78b11b92-8714-11e5-af63-feff819cdc9f",
+                        "pkg-id": "78b11b92-8714-11e5-af63-feff819cdc9f",
                         "type": "cluster",
                         "description": "Multi-nodes Yarn cluster",
                         "ports": [],
@@ -52,8 +52,12 @@
                             "NameNode",
                             "JobHistoryServer"
                         ],
-                        "cmd-reset": [],
-                        "cmd-uninstall": []
+                        "cmd-reset-master": [],
+                        "cmd-reset-secondary": [],
+                        "cmd-reset-nodes": [],
+                        "cmd-uninstall-master": [],
+                        "cmd-uninstall-secondary": [],
+                        "cmd-uninstall-nodes": []
                     }
                 ]
             }
