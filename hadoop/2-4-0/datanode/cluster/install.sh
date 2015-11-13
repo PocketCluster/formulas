@@ -12,8 +12,7 @@ mkdir -p /pocket/hdfs/2.4.0/cluster/yarn/nm-log-dir/userlogs
 
 # log file path
 mkdir -p /pocket/log/hadoop/2.4.0/cluster/
-
-touch /pocket/readme.txt
+chown -R pocket:pocket /pocket/
 
 # download package
 if [ ! -d "/bigpkg/hadoop-2.4.0" ] ; then
