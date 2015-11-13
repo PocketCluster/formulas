@@ -110,6 +110,15 @@ log4j.properties:
     - mode: 644
     - template: jinja
 
+masters:
+  file:
+    - managed
+    - name: /pocket/conf/hadoop/2.4.0/cluster/masters
+    - source: salt://hadoop/2-4-0/namenode/cluster/masters
+    - group: staff
+    - mode: 644
+    - template: jinja
+
 mapred-env.sh:
   file:
     - managed
