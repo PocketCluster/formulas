@@ -21,3 +21,5 @@ fi
 if [ ! -f "/bigpkg/hadoop-2.4.0/bin/hdfs" ] ; then
 	tar -xvzf "/bigpkg/archive/hadoop-2.4.0.tar.gz" -C "/bigpkg/"
 fi
+
+exit 0
