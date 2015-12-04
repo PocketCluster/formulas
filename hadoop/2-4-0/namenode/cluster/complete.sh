@@ -13,7 +13,7 @@ done
 
 $HADOOP_HOME/bin/hadoop namenode -format
 $HADOOP_HOME/sbin/start-dfs.sh
-# $HADOOP_HOME/bin/hdfs dfsadmin -safemode wait
+$HADOOP_HOME/bin/hdfs dfsadmin -safemode wait
 
 $HADOOP_HOME/bin/hdfs dfs -mkdir -p /user/"${USER}"
 $HADOOP_HOME/bin/hdfs dfs -mkdir -p /tmp
